@@ -125,10 +125,76 @@ main{
     font-weight: 400;
 }
 
+
+/* Feature-style */
+
+.feature-section{
+    display: flex;
+    margin-top: 150px;
+    column-gap: 7%;
+}
+
+
+.feature-title{
+    border-left: 4px solid #FF900E;
+    padding-left: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    
+}
+.feature-description
+{
+    width: 586px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.feature-card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 20px;
+}
+.feature-card{
+    width: 586px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px 30px
+}
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+.card-description{
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.ten-year{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.experience{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.movable{
+    position: relative;
+}
+
+.feature-btn{
+   
+    top:-97px;
+    left:-77px;
+
+}
 /* Media Query */
 @media screen and (max-width: 576px) {
 
-    .navbar,.nav-links,.team-work-section{
+    .navbar,.nav-links,.team-work-section,.feature-section{
         flex-direction: column;
     }
     .banner-title{
@@ -139,5 +205,57 @@ main{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
+    .feature-title{
+    border-left: 4px solid #FF900E;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+.feature-content-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.feature-card-container{
+    width:100%;
+    margin: 0 auto;
+    
+}
+.feature-description
+{
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.feature-card{
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+.card-title{
+    font-size: 1rem;
+    font-weight: 500;
 
+}
+.card-description{
+    font-size: 0.9rem;
+}
+.card-img{
+    width: 100%;
+}
+.ten-year{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.experience{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.feature-btn{
+   
+    top:-30px;
+    left:10px;
+
+}
 }
